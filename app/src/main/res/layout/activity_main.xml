@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <ImageView
+        android:id="@+id/img"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_marginStart="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/image_one"
+        tools:layout_editor_absoluteY="41dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="497dp"
+        android:layout_below="@+id/img"
+        android:layout_marginTop="3dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/but1"
+            android:layout_width="105dp"
+            android:layout_height="150dp"
+            android:layout_weight="0.5"
+            android:text="Button" />
+
+        <ImageButton
+            android:id="@+id/but2"
+            android:layout_width="97dp"
+            android:layout_height="162dp"
+            android:layout_weight="0.5"
+            app:srcCompat="@android:drawable/ic_menu_camera" />
+    </LinearLayout>
+
+</RelativeLayout>
+
